@@ -23,10 +23,14 @@ $situacao = array(
 'encaminhado',
 'postado'
 );
+/// Hora Atual 
+$hora_atual = strtolower($html[1]->find('td',0)->plaintext);
+//// Local Atual
+$local_atual = strtolower($html[1]->find('td',1)->plaintext);
 /// quero apenas a terceira coluna ( sem loop), tudo minuscula
 $situacao_atual = strtolower($html[1]->find('td',2)->plaintext);
 /// Situação atual
-echo $situacao_atual;
+echo $hora_atual." / ".$local_atual." / ".$situacao_atual;
 
 
 
