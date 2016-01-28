@@ -16,6 +16,8 @@ class RetornoCorreios extends simple_html_dom{
         parent::__construct();
     }
     
+	
+	
     public function statusRastreamento(){
     
        
